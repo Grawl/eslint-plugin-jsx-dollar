@@ -14,3 +14,16 @@ export const Failed: React.FC = () => {
     <span>${text}</span>
   );
 };
+
+export const SuccessFragment: React.FC = () => {
+  return (
+    <>{`${text}`}</>
+  );
+};
+
+export const FailedFragment: React.FC = () => {
+  return (
+    // eslint-disable-next-line local-rules/jsxDollar
+    <>${text}</>
+  );
+};

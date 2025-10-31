@@ -7,23 +7,26 @@ Eslint plugin that check JSXText's unnecessary template literal `$` character.
 
 ## Install
 ```
-yarn add -D eslint-plugin-jsx-dollar
+npm add -D eslint-plugin-jsx-dollar
 ```
 
 `.eslintrc.js`
 
 ```js
 module.exports = {
-  "plugins": [
-    ...,
-    "jsx-dollar"
-  ],
-  "rules": [
-    ...,
-    "jsx-dollar/jsxDollar": "error",
-  ]
-  ...,
+    'plugins': [
+        'jsx-dollar',
+    ],
+    'rules': {
+        'jsx-dollar/jsxDollar': 'error',
+    },
 }
+```
+
+`eslint.config.js`
+
+```js
+
 ```
 
 ## Example

@@ -27,6 +27,7 @@ describe("test", () => {
       { code: "<span>{`${variable}`}Something</span>" },
       { code: "<span>{`$`}</span>" },
       { code: "<span>Something$</span>" },
+      { code: "<>Something$</>" },
     ],
     invalid: [
       {
@@ -73,6 +74,11 @@ describe("test", () => {
         code: "<span>${variable}Something</span>",
         errors: [{ messageId: "removeDollar" }],
         output: "<span>{variable}Something</span>",
+      },
+      {
+        code: "<>${variable}Something</>",
+        errors: [{ messageId: "removeDollar" }],
+        output: "<>{variable}Something</>",
       },
     ],
   });
