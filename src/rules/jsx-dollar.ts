@@ -1,9 +1,9 @@
 import { TSESLint } from "@typescript-eslint/experimental-utils";
-import { JSXElement, JSXFragment } from '@typescript-eslint/types/dist/ts-estree'
+import { JSXElement, JSXFragment } from "@typescript-eslint/types/dist/ts-estree";
 
 const action = (
-  context: Readonly<TSESLint.RuleContext<'removeDollar', []>>,
-  node: JSXFragment | JSXElement
+  context: Readonly<TSESLint.RuleContext<"removeDollar", []>>,
+  node: JSXFragment | JSXElement,
 ) => {
   node.children.forEach((JSXChild, index) => {
     if (JSXChild.type === "JSXText" && JSXChild.value.endsWith("$")) {
@@ -19,7 +19,7 @@ const action = (
       }
     }
   });
-}
+};
 
 export const jsxDollar: TSESLint.RuleModule<"removeDollar", []> = {
   meta: {
