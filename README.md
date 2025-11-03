@@ -1,9 +1,11 @@
 # eslint-plugin-jsx-dollar
 Eslint plugin that check JSXText's unnecessary template literal `$` character.
 
-[![npm version](https://img.shields.io/npm/v/eslint-plugin-jsx-dollar.svg)](https://www.npmjs.com/package/eslint-plugin-jsx-dollar)
-[![minified size](https://img.shields.io/bundlephobia/min/eslint-plugin-jsx-dollar/latest)](https://bundlephobia.com/result?p=eslint-plugin-jsx-dollar)
-[![minzipped size](https://img.shields.io/bundlephobia/minzip/eslint-plugin-jsx-dollar/latest)](https://bundlephobia.com/result?p=eslint-plugin-jsx-dollar)
+[![npm version](https://img.shields.io/npm/v/eslint-plugin-jsx-dollar.svg)](https://www.npmjs.com/package/@grawl-ru/eslint-plugin-jsx-dollar)
+[![minified size](https://img.shields.io/bundlephobia/min/eslint-plugin-jsx-dollar/latest)](https://bundlephobia.com/result?p=@grawl-ru/eslint-plugin-jsx-dollar)
+[![minzipped size](https://img.shields.io/bundlephobia/minzip/eslint-plugin-jsx-dollar/latest)](https://bundlephobia.com/result?p=@grawl-ru/eslint-plugin-jsx-dollar)
+
+> Included in ESLint React: https://eslint-react.xyz/docs/rules/jsx-dollar
 
 ## Install
 ```
